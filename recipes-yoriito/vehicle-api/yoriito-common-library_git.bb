@@ -13,8 +13,6 @@ DEPENDS = "\
 
 require yoriito-vehicle-api.inc
 
-S = "${WORKDIR}/git"
-
 inherit cmake update-alternatives
 
 EXTRA_OECMAKE = " \

@@ -15,10 +15,10 @@ To build the Yoriito reference image, you will need to use the `meta-yoriito-tut
 This layer depends on:
 
 - URI: git://git.yoctoproject.org/poky
-  - branch: scarthgap
+  - branch: wrynose
     - layers: meta
 - URI: git://git.openembedded.org/meta-openembedded
-  - branch: scarthgap
+  - branch: wrynose
     - layers: meta-oe
 - URI: git://github.com/rust-embedded/meta-rust-bin
   - branch: master
@@ -26,7 +26,9 @@ This layer depends on:
 
 ## Supported Versions
 
-- Yocto Project: 5.0 (scarthgap)
+- Yocto Project:
+  - 5.0 (scarthgap)
+  - 6.0 (wrynose compatibility work in progress)
 
 ## License
 

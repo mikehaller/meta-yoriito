@@ -14,8 +14,6 @@ DEPENDS = "\
 
 require yoriito-vehicle-api.inc
 
-S = "${WORKDIR}/git"
-
 inherit cmake
 
 EXTRA_OECMAKE = " \

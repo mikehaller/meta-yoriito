@@ -16,7 +16,7 @@ require kura.inc
 SRC_URI += "\
     file://kura.service \
 "
-S = "${WORKDIR}/git/kura"
+S = "${UNPACKDIR}/${BP}/kura"
 
 SYSTEMD_SERVICE:${PN} = "kura.service"
 SYSTEMD_AUTO_ENABLE:${PN} = "enable"
@@ -35,7 +35,7 @@ do_install:append() {
     # install service file
     if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
         install -d ${D}${systemd_system_unitdir}/
-        install -m 0644 ${WORKDIR}/kura.service ${D}${systemd_system_unitdir}/
+        install -m 0644 ${UNPACKDIR}/kura.service ${D}${systemd_system_unitdir}/
     fi
 }
 

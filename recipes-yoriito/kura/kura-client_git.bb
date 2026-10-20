@@ -16,7 +16,7 @@ DEPENDS = "\
 
 require kura.inc
 
-S = "${WORKDIR}/git/client/cc"
+S = "${UNPACKDIR}/${BP}/client/cc"
 
 inherit cmake
 

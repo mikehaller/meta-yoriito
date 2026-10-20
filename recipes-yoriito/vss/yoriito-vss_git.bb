@@ -9,8 +9,6 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=e23fadd6ceef8c618fc1c65191d846fa"
 SRC_URI = "git://github.com/yoriito/yoriito-vss.git;protocol=https;branch=main"
 SRCREV = "3d3ea440ac50499c208df2b5d2596cdb96d9be66"
 
-S = "${WORKDIR}/git"
-
 do_install() {
     # NOTES: This recipe installs the already built vss.json
     install -d ${D}${sysconfdir}/yoriito/viss
