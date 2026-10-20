@@ -1,0 +1,23 @@
+From 7a5967ff5b261ddde694a068f3933f0916103f57 Mon Sep 17 00:00:00 2001
+Subject: [PATCH] Include cstdint in timebased filter header
+
+The public header uses uint32_t and must include its defining header itself.
+
+Upstream-Status: Pending
+---
+ common/databroker/filter/timebased_filter.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/common/databroker/filter/timebased_filter.h b/common/databroker/filter/timebased_filter.h
+index f7b1b47..66d06ba 100644
+--- a/common/databroker/filter/timebased_filter.h
++++ b/common/databroker/filter/timebased_filter.h
+@@ -17,6 +17,8 @@
+ #ifndef YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_TIMEBASED_FILTER_H_
+ #define YORIITO_VEHICLE_API_UTILITY_INC_DATABROKER_FILTER_TIMEBASED_FILTER_H_
+ 
++#include <cstdint>
++
+ /**
+  * @ingroup common
+  * @namespace yoriito::databroker::filter

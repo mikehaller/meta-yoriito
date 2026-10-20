@@ -15,6 +15,9 @@ require yoriito-vehicle-api.inc
 
 S = "${WORKDIR}/git"
 
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+SRC_URI += "file://0001-timebased-filter-include-cstdint.patch"
+
 inherit cmake update-alternatives
 
 EXTRA_OECMAKE = " \
